@@ -5,25 +5,20 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace SheepReaper.Dexter_proto
+namespace SheepReaper.Extensions.Options
 {
-    public class WritableOptions<T> : IWritableOptions<T> where T : class, new()
+    internal class WritableOptions<T> : IWritableOptions<T> where T : class, new()
     {
-        // TODO: ReImplement IHostingEnvironment when this is actually a web app.
         private readonly IHostingEnvironment _environment;
-        private readonly string _file;
         private readonly IOptionsMonitor<T> _options;
-        private readonly string _section;
+        private readonly string _key;
+        private readonly string _file;
 
-        public WritableOptions(
-            IHostingEnvironment environment,
-            IOptionsMonitor<T> options,
-            string section,
-            string file)
+        public WritableOptions(IHostingEnvironment environment, IOptionsMonitor<T> options, string key, string file)
         {
             _environment = environment;
             _options = options;
-            _section = section;
+            _key = key;
             _file = file;
         }
 
@@ -41,13 +36,13 @@ namespace SheepReaper.Dexter_proto
             var physicalPath = fileInfo.PhysicalPath;
 
             var jObject = JsonConvert.DeserializeObject<JObject>(File.ReadAllText(physicalPath));
-            var sectionObject = jObject.TryGetValue(_section, out var section)
+            var sectionObject = jObject.TryGetValue(_key, out var section)
                 ? JsonConvert.DeserializeObject<T>(section.ToString())
                 : Value ?? new T();
 
             applyChanges(sectionObject);
 
-            jObject[_section] = JObject.Parse(JsonConvert.SerializeObject(sectionObject));
+            jObject[_key] = JObject.Parse(JsonConvert.SerializeObject(sectionObject));
             File.WriteAllText(physicalPath, JsonConvert.SerializeObject(jObject, Formatting.Indented));
         }
     }

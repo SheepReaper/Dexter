@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Options;
 
-namespace SheepReaper.Dexter_proto
+namespace SheepReaper.Extensions
 {
     public interface IWritableOptions<out T> : IOptionsSnapshot<T> where T : class, new()
     {

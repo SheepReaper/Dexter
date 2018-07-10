@@ -1,10 +1,14 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog;
+using SheepReaper.Extensions.DependencyInjection;
+using SheepReaper.Extensions.Hosting;
+using SheepReaper.NETCore.Services;
+using SheepReaper.NETCore.Services.Configuration;
+using System;
+using System.Threading.Tasks;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 namespace SheepReaper.Dexter_proto
