@@ -4,8 +4,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SheepReaper.Extensions;
+using SheepReaper.NETCore.Services.Configuration;
 
-namespace SheepReaper.Dexter_proto
+namespace SheepReaper.NETCore.Services
 {
     public class PingerService : IHostedService, IDisposable
     {

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dexter-proto", "Dexter-proto\Dexter-proto.csproj", "{946CD610-F378-40DE-A805-6A3363BECC3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheepReaper.DexterLib", "SheepReaper.DexterLib\SheepReaper.DexterLib.csproj", "{9352B700-5B6E-4452-BAC8-752D90232B3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheepReaper.DexterLib.Tests", "SheepReaper.DexterLib.Tests\SheepReaper.DexterLib.Tests.csproj", "{8E32BA66-416E-4727-9685-39B256DD23EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{946CD610-F378-40DE-A805-6A3363BECC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{946CD610-F378-40DE-A805-6A3363BECC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{946CD610-F378-40DE-A805-6A3363BECC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9352B700-5B6E-4452-BAC8-752D90232B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9352B700-5B6E-4452-BAC8-752D90232B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9352B700-5B6E-4452-BAC8-752D90232B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9352B700-5B6E-4452-BAC8-752D90232B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E32BA66-416E-4727-9685-39B256DD23EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E32BA66-416E-4727-9685-39B256DD23EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E32BA66-416E-4727-9685-39B256DD23EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E32BA66-416E-4727-9685-39B256DD23EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

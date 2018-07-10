@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SheepReaper.Dexter_proto
+namespace SheepReaper.NETCore.Services.Configuration
 {
     public class TargetSettings
     {
