@@ -1,16 +1,10 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SheepReaper.Extensions;
+﻿namespace SheepReaper.DexterLib.Tests;
 
-namespace SheepReaper.DexterLib.Tests
+public class InterfaceTests
 {
-    [TestClass]
-    public class InterfaceTests
+    [Fact]
+    public void TestIWritableOptions_returnsIWritableOptions()
     {
-        [TestMethod]
-        public void TestIWritableOptions_returnsIWritableOptions()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+

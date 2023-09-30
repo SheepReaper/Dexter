@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>SheepReaper.Dexter_proto</RootNamespace>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>

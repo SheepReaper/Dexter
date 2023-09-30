@@ -9,12 +9,12 @@ namespace SheepReaper.Extensions.Options
 {
     internal class WritableOptions<T> : IWritableOptions<T> where T : class, new()
     {
-        private readonly IHostingEnvironment _environment;
+        private readonly IHostEnvironment _environment;
         private readonly IOptionsMonitor<T> _options;
         private readonly string _key;
         private readonly string _file;
 
-        public WritableOptions(IHostingEnvironment environment, IOptionsMonitor<T> options, string key, string file)
+        public WritableOptions(IHostEnvironment environment, IOptionsMonitor<T> options, string key, string file)
         {
             _environment = environment;
             _options = options;

@@ -3,8 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog;
+using NLog.Extensions.Hosting;
 using SheepReaper.Extensions.DependencyInjection;
-using SheepReaper.Extensions.Hosting;
 using SheepReaper.NETCore.Services;
 using SheepReaper.NETCore.Services.Configuration;
 using System;
@@ -17,7 +17,7 @@ namespace SheepReaper.Dexter_proto
     {
         public static async Task Main(string[] args)
         {
-            var logger = LogManager.LoadConfiguration("nlog.config").GetCurrentClassLogger();
+            var logger = LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
 
             try
             {
