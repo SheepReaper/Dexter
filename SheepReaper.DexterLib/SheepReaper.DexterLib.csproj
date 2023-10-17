@@ -10,7 +10,7 @@
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NLog.Config" Version="4.7.15" />
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.4" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.5" />
     <PackageReference Include="NLog.Extensions.Hosting" Version="5.3.5" />
   </ItemGroup>
 
