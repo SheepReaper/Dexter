@@ -33,7 +33,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
     <PackageReference Include="NLog" Version="5.2.7" />
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.5" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.7" />
   </ItemGroup>
 
   <ItemGroup>
